@@ -1,0 +1,243 @@
+html,body,div,span,applet,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	font-weight:normal;
+	vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+ol,ul,li {
+	list-style:none;
+}
+blockquote,q {
+	quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+th,td {
+	vertical-align:middle;
+}
+/* custom */
+a {
+	outline:none;
+	color:#16418a;
+	text-decoration:none;
+	/* -webkit-backface-visibility:hidden; */
+}
+a:focus {
+	outline:none;
+}
+a:hover{
+	text-decoration: none;
+}
+input:focus,select:focus,textarea:focus {
+	outline:-webkit-focus-ring-color auto 0;
+}
+*{
+	box-sizing: border-box;
+}
+
+
+
+.container{
+  width: 1220px;
+}
+/* 顶部样式开始 */
+header{
+  padding-top: 24px;
+  background-color: #fff5fe;
+}
+.main-menu>nav>ul>li{
+  float: left;
+  margin-right: 35px;
+  padding-bottom: 24px;
+  position: relative;
+}
+.main-menu>nav>ul>li>a{
+  font-size: 16px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 600;
+  padding: 32px 0;
+}
+.main-menu>nav>ul>li>a:hover{
+  color: #ea4c89;
+}
+.main-menu .dropdown{
+  position: absolute;
+  top: 100%;
+  display: none;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
+}
+.main-menu .dropdown>ul>li>a{
+  display: block;
+  background-color: #fff;
+  color: #000;
+  width: 180px;
+  height: 45px;
+  line-height: 40px;
+  padding: 0 10px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+.main-menu .dropdown>ul>li>a::before{
+  content:"";
+  display: block;
+  position: absolute;
+  background-color: #ea4c89;
+  width: 180px;
+  height: 45px;
+  left: -100%;
+  z-index: -1;
+  transition: all .5s;
+}
+.main-menu .dropdown>ul>li>a:hover{
+  color: #fff;
+}
+.main-menu .dropdown>ul>li>a:hover::before{
+  left: 0;
+}
+.sild-bar{
+  float: right;
+  margin-top: 10px;
+}
+/* 顶部样式结束 */
+/* 其他相同样式 */
+/* @font-face{
+  font-family: myfont;
+  src: url(../fonts/fa-solid-900.woff2);
+}
+h2{
+  font-family: myfont, serif;
+} */
+
+
+/* 按钮样式 */
+.skill-button{
+  display: inline-block;
+  background: #ea4c89;
+  padding: 14px 26px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.skill-button>span{
+  position: relative;
+  z-index: 5;
+}
+.skill-button::before{
+  content: "";
+  background: #68B028;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .5s;
+}
+.skill-button:hover{
+  color: #fff;
+}
+.skill-button:hover::before{
+  width: 100%;
+  z-index: 3;
+}
+.main-title{
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main-p{
+  font-size: 16px;
+  color: #51515d;
+}
+
+
+
+footer{
+  background-color: #1b1b31;
+}
+.footer-top{
+  padding: 110px 0;
+}
+.footer-top h3{
+  font-size: 36px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.footer-top p{
+  color: #9c9cae;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.footer-top .item1 h4{
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer-top .item2 h4{
+  padding-top: 15px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer-top .item2 ul>li>a{
+  display: inline-block;
+  color: #9c9cae;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: all .3s;
+}
+.footer-top .item2 ul>li>a:hover{
+  color: #ea4c89;
+}
+.footer-top .item3 input{
+  width: 100%;
+  height: 50px;
+  border: 2px solid #38384b;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  background: transparent;
+  color: #ffffff;
+}
+.footer-top .item3 textarea{
+  width: 100%;
+  height: 100px;
+  border: 2px solid #38384b;
+  margin-bottom: 40px;
+  padding: 20px 20px;
+  background: transparent;
+  color: #ffffff;
+}
+.copyright{
+  border-top: 1px solid #323246;
+  padding: 24px 0;
+  background: #1b1b31;
+  margin-bottom: 0;
+  margin-top: -8px;
+}
+.copyright>p{
+  text-align: center;
+  color: #fff;
+}
+.copyright>p>a{
+  color: #ea4c89;
+  font-weight: bold;
+}
